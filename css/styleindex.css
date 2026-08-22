@@ -1,0 +1,281 @@
+/* Reset y variables base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #460427;
+    --card-bg: #161821;
+    --text-main: #EDEDED;
+    --text-muted: #A0A5B5;
+    --accent: #D4A373;
+    --accent-hover: #E9EDC9;
+    --font-heading: 'Instrument Serif', serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    /* Fondo con gradiente lineal repetitivo */
+    background-color: var(--bg-color);
+    background-image: repeating-linear-gradient(
+        180deg,
+        rgba(57, 1, 32, 0.741) 10%
+        rgba(157, 4, 81, 0.685) 100%,
+        
+    );
+    color: var(--text-main);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    padding: 0 1rem;
+}
+
+/* Header & Nav */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.site-nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.site-nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.site-nav a:hover, .github-link {
+    color: var(--accent);
+}
+
+.github-link {
+    font-weight: 500;
+    border: 1px solid var(--accent);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.github-link:hover {
+    background-color: var(--accent);
+    color: var(--bg-color);
+}
+
+/* Main & Sections */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Estilo base para todas las secciones */
+section {
+    padding: 5rem 2rem; /* Un poco de padding horizontal interno para que el fondo respire */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Variante de sección con degradé lineal repetitivo */
+section.section-gradient {
+    background-color: var(--bg-color);
+    background-image: repeating-linear-gradient(
+        45deg,
+        rgba(131, 56, 236, 0.12) 0%,
+        rgba(131, 56, 236, 0.12) 4%,
+        rgba(185, 35, 255, 0.12) 4%,
+        rgba(185, 35, 255, 0.12) 8%
+    );
+    /* Opcional: bordes redondeados sutiles si quieres que parezca una tarjeta grande */
+    border-radius: 12px;
+    margin: 2rem 0;
+    border: 1px solid rgba(185, 35, 255, 0.2);
+
+.badge {
+    background-color: rgba(212, 163, 115, 0.1);
+    color: var(--accent);
+    padding: 0.4rem 0.8rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.content h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1.1;
+    margin: 1rem 0;
+    font-weight: 400;
+}
+
+.content p {
+    color: var(--text-muted);
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+}
+
+.content-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Botones con transición */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn.primary {
+    background-color: var(--accent);
+    color: var(--bg-color);
+}
+
+.btn.primary:hover {
+    background-color: #C28E5F;
+}
+
+.btn.secondary {
+    border: 1px solid var(--text-muted);
+    color: var(--text-main);
+}
+
+.btn.secondary:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+/* Secciones generales */
+h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    color: var(--accent);
+}
+
+/* Grid de Habilidades */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.skill-card {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+.skill-card p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* Formulario de contacto */
+.contact-form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.form-group input, 
+.form-group textarea {
+    background-color: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 0.8rem;
+    color: var(--text-main);
+    font-family: var(--font-sans);
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+/* Footer */
+.site-footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.site-footer a {
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    color: var(--accent);
+}
+
+/* Responsive media query */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .site-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .site-footer {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+}
