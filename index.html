@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Mariü Lorenzo | Versatilidad, Arte & Tecnología</title>
+    <title>Mariü Lorenzo | Versatilidad, Arte & Tecnología</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
     <!-- Hoja de estilos -->
     <link rel="stylesheet" href="css/styleindex.css">
 </head>
@@ -15,55 +15,84 @@
 
     <!-- Header & Nav -->
     <header class="site-header">
-        <div class="logo">AIE Creations</div>
+        <a href="#inicio" class="logo-brand">
+            <span class="logo">AIE Creations</span>
+        </a>
         <nav class="site-nav">
             <a href="#sobre-mi">Sobre mí</a>
             <a href="#habilidades">Habilidades</a>
             <a href="#personal">Espacio Creativo</a>
             <a href="#contacto">Contacto</a>
-            <a href="https://www.linkedin.com/in/mariu-lorenzo/" target="_blank" class="linkedin-link">LinkedIn</a>
-            <a href="https://github.com/MariuLorenzo" target="_blank" class="github-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/mariu-lorenzo/" target="_blank" rel="noopener noreferrer" class="linkedin-link">LinkedIn</a>
+            <a href="https://github.com/MariuLorenzo" target="_blank" rel="noopener noreferrer" class="github-link">GitHub</a>
         </nav>
     </header>
 
     <!-- Main -->
     <main>
-        <!-- Content Section -->
-        <section class="content">
-            <div class="content-section">
-                <div class="hero-image-container">
-                    <img src="img/mirror.jpeg" alt="Mariela Lorenzo | Retrato Artístico" class="hero-avatar">
+        <!-- Hero Section -->
+        <section class="hero-section" id="inicio">
+            <div class="hero-container">
+                
+                <!-- Columna Izquierda: Presentación -->
+                <div class="hero-text-content">
+                    <div class="hero-badge-container">
+                        <span class="badge">✨ Desarrollo, Diseño & Mirada Humana</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Mariela Lorenzo <span class="gradient-text"> </span>
+                    </h1>
+                    
+                    <h2 class="hero-subtitle">
+                        Versatilidad, arte, tecnología y sentido humano.
+                    </h2>
+                    
+                    <p class="hero-description">
+                        Creo soluciones digitales con propósito.<br>
+                        Combino la lógica del software y el diseño UX/UI con una sólida formación interdisciplinaria y una comprensión profunda de las personas para conectar ideas con realidades.
+                    </p>
+                    
+                    <div class="content-buttons hero-buttons">
+                        <a href="#contacto" class="btn primary">Hablemos</a>
+                        <a href="#habilidades" class="btn secondary">Ver más</a>
+                    </div>
                 </div>
-                <h1>Hola, soy Mariela Lorenzo</h1>
-                <span class="badge">Desarrollo, Diseño & Mirada Humana</span>
-                <h2>Versatilidad, arte, tecnología y sentido humano.</h2>
-                <p>Creo soluciones digitales con propósito. 
-                    Combino la lógica del software, el diseño UX/UI 
-                    con una sólida formación interdisciplinaria 
-                    y una comprensión profunda de las personas 
-                    para conectar ideas con realidades.</p>
-                <div class="content-buttons">
-                    <a href="#contacto" class="btn primary">Hablemos</a>
-                    <a href="#habilidades" class="btn secondary">Ver más</a>
+                <!-- Margen Izquierdo: Logotipo AIE Creations -->
+                <div class="about-logo-wrapper">
+                    <img src="img/upscalemedia-transformed (1).png" alt="AIE Creations Logo" class="about-logo-img">
                 </div>
+                
+
             </div>
         </section>
 
-        <!-- Sobre Mí -->
+        <!-- Sobre Mí + Logotipo AIE Creations en el margen izquierdo -->
         <section id="sobre-mi" class="about">
-            <h2>Sobre Mí</h2>
-            <p>No creo en los moldes rígidos. 
-                Mi recorrido profesional une universos que habitualmente van por separado: 
-                la estructura de la programación, la sensibilidad del arte y el diseño, 
-                el desarrollo de software y la comprensión de las personas. 
-                Entiendo la tecnología como un medio para transformar 
-                la realidad y generar impacto. 
-                Así como los patrones mentales estructuran nuestra experiencia, 
-                el código y el diseño dan forma a las experiencias digitales. 
-                Mi valor radica en esa mirada holística: 
-                indago, aprendo con rapidez, conecto los puntos para resolver 
-                problemas complejos con empatía, creatividad y rigor estratégico.</p>
-    </section>
+            <div class="about-container">
+             <!-- Columna Derecha: Foto Hero -->
+                <div class="hero-visual-content">
+                    <div class="hero-image-container">
+                        <img src="img/mirror.jpeg" alt="Mariela Lorenzo | Retrato Artístico" class="hero-avatar">
+                    </div>
+                </div>
+                <!-- Margen Derecho: Contenido Sobre Mí -->
+                <div class="about-content">
+                    <h2>Sobre Mí</h2>
+                    <p>No creo en los moldes rígidos. <br>
+                        Mi recorrido profesional une universos que habitualmente van por separado: 
+                        la estructura de la programación, la sensibilidad del arte y el diseño, 
+                        el desarrollo de software y la comprensión de las personas. <br>
+                        Entiendo la tecnología como un medio para transformar 
+                        la realidad y generar impacto.<br> 
+                        Así como los patrones mentales estructuran nuestra experiencia, 
+                        el código y el diseño dan forma a las experiencias digitales.<br> 
+                        Mi valor radica en esa mirada holística: <br>
+                        indago, aprendo con rapidez, conecto los puntos para resolver 
+                        problemas complejos con empatía, creatividad y rigor estratégico.</p>
+                </div>
+            </div>
+        </section>
 
         <!-- Habilidades -->
         <section id="habilidades" class="skills">
@@ -87,7 +116,7 @@
                         pensamiento computacional con el foco puesto en transformar 
                         ideas conceptuales en soluciones funcionales y estructuradas.</p>
                 </div>
-                 <div class="skill-card">
+                <div class="skill-card">
                     <h3>👥 Mirada Interdisciplinaria & Humana</h3>
                     <p>Habilidad genuina para la escucha, el trabajo con equipos diversos, 
                         la facilitación y la resolución de problemas complejos 
@@ -106,7 +135,9 @@
         <section id="contacto" class="contact">
             <h2>Contacto</h2>
             <p>¿Tienes una idea que necesita forma, un proyecto multidisciplinario 
-                o buscas sumar una perspectiva diferente y humana a tu equipo? Escríbeme y charlemos. 
+                o buscas sumar una perspectiva diferente y humana a tu equipo? 
+                <br> 
+                Escríbeme y charlemos. 
                 <br> 
                 Si quieres colaborar, intercambiar ideas o simplemente saludar, 
                 me encantaría saber de ti! <br>
@@ -114,15 +145,15 @@
             <form action="#" method="POST" class="contact-form">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Correo Electrónico</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
                 </div>
                 <div class="form-group">
                     <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntame sobre tu proyecto o idea..." required></textarea>
                 </div>
                 <button type="submit" class="btn primary">Enviar Mensaje</button>
             </form>
