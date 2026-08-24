@@ -165,19 +165,29 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <p>&copy; 2026 AIE Creations by Mariü. <br/>
-            Diseño con propósito e identidad propia.</p>
-        <a href="https://github.com/MariuLorenzo" target="_blank" rel="noopener noreferrer">Visita mi perfil de GitHub</a>
-    
-        <div class="heart-container" id="heartContainer" title="Haz clic para interactuar">
-            <div class="heart beating" id="heartElement"></div>
-        </div>
-    <p class="footer-status" id="statusText">Haz clic para detener el corazón</p>
+        <div class="footer-wrapper">
+            <!-- Corazón Extremo Izquierdo -->
+            <div class="heart-container heart-left" title="Haz clic para detener/revivir este corazón">
+                <div class="heart beating"></div>
+            </div>
 
+            <!-- Contenido Central del Footer -->
+            <div class="footer-center-content">
+                <p>&copy; 2026 AIE Creations by Mariü. <br/>
+                    Diseño con propósito e identidad propia.</p>
+                <a href="https://github.com/MariuLorenzo" target="_blank" rel="noopener noreferrer">Visita mi perfil de GitHub</a>
+                <p class="footer-status" id="statusText">Haz clic en los corazones para detener o revivir su latido</p>
+            </div>
+
+            <!-- Corazón Extremo Derecho -->
+            <div class="heart-container heart-right" title="Haz clic para detener/revivir este corazón">
+                <div class="heart beating"></div>
+            </div>
+        </div>
     </footer>
 
-<!-- LLAMA AL ARCHIVO JAVASCRIPT -->
-    <script src="heart.js"></script>
+    <!-- LLAMA AL ARCHIVO JAVASCRIPT -->
+    <script src="js/heart.js"></script>
 
 </body>
 </html>

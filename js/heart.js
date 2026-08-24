@@ -1,20 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const heartElement = document.getElementById('heartElement');
-    const heartContainer = document.getElementById('heartContainer');
+    const heartContainers = document.querySelectorAll('.heart-container');
     const statusText = document.getElementById('statusText');
-    
-    let isBeating = true;
 
-    heartContainer.addEventListener('click', () => {
-        isBeating = !isBeating;
+    heartContainers.forEach((container, index) => {
+        const heart = container.querySelector('.heart');
+        let isBeating = true;
 
-        // Alternamos clases de forma limpia
-        heartElement.classList.toggle('beating', isBeating);
-        heartElement.classList.toggle('stopped', !isBeating);
+        container.addEventListener('click', () => {
+            isBeating = !isBeating;
 
-        // Actualizamos el texto descriptivo
-        statusText.innerText = isBeating 
-            ? 'Haz clic para detener el corazón' 
-            : 'Haz clic para revivir el corazón';
+            // Alternamos la clase de latido y detenido
+            heart.classList.toggle('beating', isBeating);
+            heart.classList.toggle('stopped', !isBeating);
+
+            // Mensaje de estado dinámico según los corazones activos
+            if (statusText) {
+                const stoppedCount = document.querySelectorAll('.heart.stopped').length;
+                const totalCount = heartContainers.length;
+
+                if (stoppedCount === totalCount) {
+                    statusText.innerText = 'Los dos corazones están en pausa. Haz clic para revivirlos.';
+                } else if (stoppedCount > 0) {
+                    statusText.innerText = 'Un corazón está en pausa. Haz clic para revivirlo.';
+                } else {
+                    statusText.innerText = 'Haz clic en los corazones para detener o revivir su latido';
+                }
+            }
+        });
     });
 });

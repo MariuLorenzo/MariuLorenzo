@@ -567,21 +567,33 @@ section {
 }
 
 /* ==========================================================================
-   Footer
+   Footer & Corazones Interactivos
    ========================================================================== */
 .site-footer {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 2.5rem 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.75rem;
+    padding: 2.5rem 1rem;
     color: var(--text-muted);
     font-size: 0.9rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.footer-center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    gap: 0.5rem;
+    flex: 1;
 }
 
 .site-footer a {
@@ -594,82 +606,78 @@ section {
     color: var(--color-coral);
 }
 
-/* Contenedor del corazón en el footer */
+/* Contenedores de los corazones en los extremos */
 .heart-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: relative;
-    width: 100px;
-    height: 100px;
+    width: 5rem;
+    height: 5rem;
     cursor: pointer;
-    margin: 20px auto;
-}
-
-/* Forma base del corazón */
-.heart {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: #ff2a5f;
-    transform: rotate(-45deg);
-    transition: background-color 0.3s ease;
-}
-
-.heart::before,
-.heart::after {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: #ff2a5f;
+    position: relative;
+    user-select: none;
+    flex-shrink: 0;
+    padding: 6px;
     border-radius: 50%;
-    transition: background-color 0.3s ease;
+    transition: transform 0.25s ease, background-color 0.25s ease;
 }
 
-.heart::before {
-    top: -50px;
-    left: 0;
+.heart-container:hover {
+    transform: scale(1.15);
+    background-color: rgba(139, 92, 246, 0.15);
 }
 
-.heart::after {
-    top: 0;
-    left: 50px;
+/* Corazón compacto con gradiente violeta a rosa */
+.heart {
+    width: 15rem;
+    height: 15rem;
+    background: linear-gradient(125deg, #8d0469 0%, #FF5D8F 50%, #f41212 100%);
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>');
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="black" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
+    filter: drop-shadow(0 0 6px rgba(217, 70, 239, 0.6));
+    transition: filter 0.3s ease, background 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
 }
 
 /* Animación de latido */
-.beating {
-    animation: pulse 0.6s infinite alternate ease-in-out;
+.heart.beating {
+    animation: heartPulse 0.75s infinite alternate ease-in-out;
 }
 
-@keyframes pulse {
+@keyframes heartPulse {
     0% {
-        transform: rotate(-45deg) scale(1);
+        transform: scale(1);
+        filter: drop-shadow(0 0 4px rgba(139, 92, 246, 0.4));
     }
     100% {
-        transform: rotate(-45deg) scale(1.25);
+        transform: scale(1.22);
+        filter: drop-shadow(0 0 12px rgba(255, 93, 143, 0.9));
     }
 }
 
-/* Estado detenido (Cambio de color elegante) */
+/* Estado detenido (apagado sutil e interactivo) */
 .heart.stopped {
-    background-color: #555;
-}
-
-.heart.stopped::before,
-.heart.stopped::after {
-    background-color: #555;
+    background: #666666;
+    filter: drop-shadow(0 0 2px rgba(100, 100, 100, 0.4));
+    opacity: 0.5;
+    animation: none;
+    transform: scale(0.92);
 }
 
 /* Texto informativo del footer */
 .footer-status {
-    font-size: 0.9rem;
-    color: #aaa;
-    margin-top: 10px;
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    margin-top: 6px;
     user-select: none;
     text-align: center;
     font-family: inherit;
+    opacity: 0.85;
 }
 
 /* ==========================================================================
