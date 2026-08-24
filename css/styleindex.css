@@ -12,7 +12,7 @@
     /* Paleta de colores Arcoiris */
     --color-coral: #FF5A5F;
     --color-amber: #FFB400;
-    --color-green: #3DDC84;
+    /*--color-green: #3DDC84;*/
     --color-blue: #00A6ED;
     --color-purple: #8B5CF6;
 
@@ -27,7 +27,7 @@
     --accent-hover: var(--color-purple);
     --accent-coral: var(--color-coral);
     --accent-amber: var(--color-amber);
-    --accent-green: var(--color-green);
+    /*--accent-green: var(--color-green);*/
 
     --border-subtle: rgba(0, 166, 237, 0.15);
     --border-card: rgba(255, 255, 255, 0.08);
@@ -42,15 +42,15 @@ html {
 }
 
 body {
-    background-color: var(--bg-color);
-    background-image: linear-gradient(
+    background-color: rgb(0, 0, 0);
+    /*background-image: linear-gradient(
         180deg, 
-        rgba(0, 166, 237, 0.145) 0%,     /* Azul (#00A6ED) inicio */
-        rgba(139, 92, 246, 0.18) 25%,   /* Púrpura (#8B5CF6) */
-        rgba(255, 90, 95, 0.18) 50%,    /* Coral (#FF5A5F) centro */
-        rgba(255, 179, 0, 0.174) 75%,    /* Ámbar (#FFB400) */
-        rgba(61, 220, 133, 0.168) 100%   /* Verde (#3DDC84) final */
-    );
+        rgba(26, 89, 225, 0.515) 25%,     /* Azul (#00A6ED) */
+        /*rgba(99, 38, 242, 0.668) 45%,   /* Púrpura (#8B5CF6) */
+        /*rgba(242, 13, 238, 0.609) 65%,    /* Rosa */
+        /*rgba(244, 6, 66, 0.654) 90%,    /* Coral (#FF5A5F) */
+    /*);*/
+
     background-attachment: fixed;
     color: var(--text-main);
     font-family: var(--font-sans);
@@ -120,7 +120,7 @@ body {
 }
 
 .linkedin-link:hover {
-    background-color: rgba(16, 135, 240, 0.387);
+    background-color: rgba(35, 148, 247, 0.564);
     color: #ffffff !important;
     box-shadow: 0 0 14px rgba(0, 237, 229, 0.519);
 }
@@ -128,15 +128,15 @@ body {
 .github-link {
     font-weight: 500;
     /*border: 1px solid var(--color-green);*/
-    color: var(--color-green) !important;
+    color: var(--color-blue) !important;
     padding: 0.4rem 0.85rem;
     border-radius: 6px;
 }
 
 .github-link:hover {
-    background-color:  rgba(12, 237, 0, 0.18);
+    background-color: rgba(35, 148, 247, 0.564);
     color: #ffffff !important;
-    box-shadow: 0 0 14px rgba(205, 237, 0, 0.519);
+    box-shadow: 0 0 14px rgba(0, 237, 229, 0.519);
 }
 
 /* ==========================================================================
@@ -188,9 +188,9 @@ section {
 .badge {
     display: inline-flex;
     align-items: center;
-    background-color: rgba(255, 0, 64, 0.281);
+    background-color: rgba(255, 0, 64, 0.229);
     color: var(--color-amber);
-    border: 1px solid rgba(255, 0, 51, 0.35);
+    border: 1px solid rgba(255, 0, 51, 0.34);
     padding: 0.42rem 1rem;
     border-radius: 50px;
     font-size: 0.88rem;
@@ -204,7 +204,7 @@ section {
     line-height: 1.12;
     margin-bottom: 0.75rem;
     font-weight: 400;
-    color: var(--text-main);
+    color: var(--color-amber);
     word-break: break-word;
 }
 
@@ -218,7 +218,7 @@ section {
 .hero-subtitle {
     font-family: var(--font-heading);
     font-size: clamp(1.35rem, 2.5vw, 1.85rem);
-    color: var(--color-coral);
+    color: rgba(237, 0, 111, 0.714);
     margin-bottom: 1.25rem;
     font-weight: 400;
     line-height: 1.3;
@@ -257,7 +257,7 @@ section {
     padding: 5px;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--color-blue), var(--color-purple), var(--color-coral));
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45), 0 0 25px rgba(0, 166, 237, 0.25);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.45), 0 0 25px rgba(126, 0, 237, 0.25);
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s ease;
 }
 
@@ -306,13 +306,13 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 36px;
-    padding: 5rem;
+    padding: 0.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .about-logo-wrapper:hover {
     transform: translateY(-4px);
-    border-color: rgba(0, 166, 237, 0.4);
+    /*-color: rgba(0, 166, 237, 0.4);*/
     box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(67, 0, 237, 0.25);
 }
 
@@ -321,7 +321,7 @@ section {
     max-width: auto;
     height: auto;
     object-fit: contain;
-    filter: drop-shadow(0 4px 14px rgba(0, 166, 237, 0.25));
+    /*filter: drop-shadow(0 4px 14px rgba(0, 166, 237, 0.25));*/
     transition: transform 0.3s ease;
 }
 
@@ -369,42 +369,59 @@ section {
 }
 
 .btn.primary {
+    border: 1px solid var(--color-purple);
     background: transparent;
-    color: var(--color-ambar);
-    border: 1px solid var(--color-ambar);
+    color: var(--color-purple);
+    border: 1px solid var(--color-purple);
 }
 
 .btn.primary:hover {
-    background-color: rgba(242, 177, 38, 0.674);
-    border-color: var(--color-ambar);
-    color: #ffffff;
-    box-shadow: 0 6px 20px rgba(237, 142, 0, 0.411);
+    background-color: rgba(242, 38, 232, 0.371);
+    border-color: var(--color-purple);
+    color: var(--color-amber);
+    box-shadow: 0 6px 20px rgba(150, 0, 237, 0.411);
 }
 
 .btn.secondary {
-    border: 1px solid var(--color-green);
-    color: var(--color-green);
+    border: 1px solid var(--color-purple);
+    color: var(--color-purple);
     background: transparent;
 }
 
 .btn.secondary:hover {
-    background-color: rgba(61, 220, 132, 0.15);
-    border-color: var(--color-green);
-    color: #ffffff;
-    box-shadow: 0 6px 20px rgba(61, 220, 132, 0.25);
+    background-color: rgba(242, 38, 232, 0.371);
+    border-color: var(--color-purple);
+    color: var(--color-amber);
+    box-shadow: 0 6px 20px rgba(150, 0, 237, 0.411);
+}
+
+.btn.submit {
+    border: 1px solid var(--color-amber);
+    background: transparent;
+    color: var(--color-amber);
+    border: 1px solid var(--color-amber);
+}
+
+.btn.submit:hover {
+    background-color: rgba(237, 191, 5, 0.718);
+    border-color: var(--color-amber);
+    color: #060506fb;
+    box-shadow: 0 6px 20px rgba(237, 109, 5, 0.769);
 }
 
 /* ==========================================================================
    Títulos de Sección & Contenido General
    ========================================================================== */
-h2 {
+
+   h2 {
     font-family: var(--font-heading);
     font-size: clamp(2rem, 5vw, 2.8rem);
     margin-bottom: 1.25rem;
     font-weight: 400;
-    color: var(--color-coral);
+    color: rgba(243, 15, 163, 0.644);
     line-height: 1.2;
     text-align: center;
+    text-shadow: 0 0 12px rgba(224, 70, 191, 0.62);
 }
 
 .personal-section,
@@ -429,6 +446,7 @@ h2 {
 /* ==========================================================================
    Grid de Habilidades (Centrado)
    ========================================================================== */
+
 .skills {
     display: flex;
     flex-direction: column;
@@ -486,7 +504,7 @@ h2 {
 .skill-card h3 {
     margin-bottom: 0.75rem;
     font-size: 1.15rem;
-    color: var(--text-main);
+    color: var(--color-amber);
     text-align: center;
 }
 
@@ -573,7 +591,7 @@ h2 {
 }
 
 .site-footer a:hover {
-    color: var(--color-green);
+    color: var(--color-coral);
 }
 
 /* ==========================================================================
