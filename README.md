@@ -41,6 +41,14 @@ https://mariu-lorenzo.vercel.app/
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 * ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 * ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+[![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/Visual%20Studio%20Code-0078d7.svg?logo=visualstudiocode&logoColor=white)](#)
+* [![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)](#)
+* [![Google Gemini](https://img.shields.io/badge/Google%20Gemini-886FBF?logo=googlegemini&logoColor=fff)](#)
+* [![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?logo=GoogleChrome&logoColor=white)](#)
+* [![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?logo=vercel&logoColor=white)](#)
+* [![Git] (https://img.shields.io/badge/github-repo-blue?logo=github)]
+* ![Static Badge](https://img.shields.io/badge/antigravity-8A2BE2)
+* ![SourceForge Commit Count](https://img.shields.io/sourceforge/commit-count/:project/:repo)
 
 #
 ## Versiones 📌
@@ -62,10 +70,13 @@ Esta página está disponible para todas las versiones de navegadores.
 #
 * [MariuLorenzo](https://github.com/MariuLorenzo)
 
+* [![GitHub](https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white)](#)
+
 #
 ## Revisión del Proyecto 📁
 #
 
+[![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff)](#)
 
 #
 ## Licencia 📄
@@ -80,7 +91,12 @@ _(justificada con toda la frustración que genera este universo que aún no comp
 
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 
-(Contacta con la autora para detalles)
+Contacta con la autora para detalles:
+
+* [![LinkedIn](https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff)](#)
+https://www.linkedin.com/in/mariu-lorenzo/ 
+
+📧​ Mail: mariulorenzo@gmail.com
 
 #
 ## Expresiones de Gratitud 🎁
@@ -105,12 +121,19 @@ _(justificada con toda la frustración que genera este universo que aún no comp
 
 ## Hi there👋
 🔭 I'm currently working on becoming the best version of myself.
+
 🌱 I'm currently learning software development.
+
 👯 I'm looking to collaborate on interesting projects.
+
 🤔 I'm looking for help with "fixing the world."
+
 💬 Ask me about...anything (?)
+
 📫 How to contact me: mariulorenzo@gmail.com
+
 😄 Pronouns: She.
+
 ⚡ Fun fact: My favorite place is water. I love to swim.
 
 <!--**MariuLorenzo/MariuLorenzo** is a ✨ _special_ ✨ repository because you can read it in its READ-ME-->
