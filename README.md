@@ -9,7 +9,8 @@ En un presente tan diverso y con miras a un futuro totalmente incierto, todos lo
 ## Sobre Mí ✨
 #
 
-Soy Mariü (AIE Creations). Combino la lógica del software, el diseño UX/UI y una sólida formación en humanidades y psicomotricidad para crear soluciones tecnológicas con propósito.  En mi vida profesional hice un recorrido interdisciplinario que incluye la docencia, el coaching, la comunicación y el arte. Desde esa mirada, entiendo que el código informático y los mapas mentales comparten una misma esencia: estructuran la forma en que interactuamos con el mundo.  Hoy transformo esa versatilidad en productos digitales funcionales, humanos y sostenibles, aportando una perspectiva empática, curiosa y orientada a resolver problemas reales. 
+Soy Mariü y mi proyecto es "AIE Creations". <br>
+Combino la lógica del software, el diseño UX/UI y una sólida formación en humanidades y psicomotricidad para crear soluciones tecnológicas con propósito.  En mi vida profesional hice un recorrido interdisciplinario que incluye la docencia, el coaching, la comunicación y el arte. Desde esa mirada, entiendo que el código informático y los mapas mentales comparten una misma esencia: estructuran la forma en que interactuamos con el mundo.  Hoy transformo esa versatilidad en productos digitales funcionales, humanos y sostenibles, aportando una perspectiva empática, curiosa y orientada a resolver problemas reales. 
 
 #
 ## Instalación 🔧
@@ -52,14 +53,14 @@ Esta página está disponible para todas las versiones de navegadores.
 #
 * **Mariela Lorenzo**
 
-[DixyStardust](https://github.com/DixyStardust)
+[MariuLorenzo](https://github.com/MariuLorenzo)
 
-<img src="https://avatars.githubusercontent.com/u/114081375?v=4" width=115><br><sub> Dixy Stardust </sub>
+<img src="https://avatars.githubusercontent.com/u/114081375?v=4" width=115><br><sub> Mariü Lorenzo </sub>
 
 #
 ## Desarrollo del Proyecto 💡
 #
-* [DixyStardust](https://github.com/DixyStardust) 
+* [MariuLorenzo](https://github.com/MariuLorenzo)
 
 #
 ## Revisión del Proyecto 📁
