@@ -70,10 +70,11 @@
         <!-- Sobre Mí + Logotipo AIE Creations en el margen izquierdo -->
         <section id="sobre-mi" class="about">
             <div class="about-container">
-             <!-- Columna Derecha: Foto Hero -->
+             <!-- Foto Hero -->
                 <div class="hero-visual-content">
                     <div class="hero-image-container">
                         <img src="img/mirror.jpeg" alt="Mariela Lorenzo | Retrato Artístico" class="hero-avatar">
+                        <!--<img src="img\IMG_20170112_211502_processed.jpg" alt="Mariela Lorenzo | Retrato Artístico" class="hero-avatar">-->
                     </div>
                 </div>
                 <!-- Margen Derecho: Contenido Sobre Mí -->
@@ -128,20 +129,22 @@
         <!-- Sección Personal (Arte y Letras) -->
         <section id="personal" class="personal-section">
             <h2>El Factor Artístico</h2>
-            <p>Fuera de las pantallas, encuentro inspiración en el movimiento, la caligrafía, el diseño libre, la sincronía entre la estructura técnica y la expresión artística.</p>
+            <p>Fuera de las pantallas, encuentro inspiración en el movimiento, 
+                la caligrafía y la escritura, el diseño libre, la sincronía 
+                entre la estructura técnica y la expresión artística.</p>
         </section>
 
         <!-- Contacto -->
         <section id="contacto" class="contact">
             <h2>Contacto</h2>
-            <p>¿Tienes una idea que necesita forma, un proyecto multidisciplinario 
+            <p>¿Tenes una idea que necesita forma, un proyecto multidisciplinario 
                 o buscas sumar una perspectiva diferente y humana a tu equipo? 
                 <br> 
-                Escríbeme y charlemos. 
+                Escribime y charlemos. 
                 <br> 
-                Si quieres colaborar, intercambiar ideas o simplemente saludar, 
-                me encantaría saber de ti! <br>
-                Completa el formulario y te responderé a la brevedad.</p>      
+                Si queres colaborar, intercambiar ideas o simplemente saludar, 
+                me encantaría saber de vos! <br>
+                Completá el formulario y responderé a la brevedad.</p>      
             <form action="#" method="POST" class="contact-form">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
@@ -162,9 +165,19 @@
 
     <!-- Footer -->
     <footer class="site-footer">
-        <p>&copy; 2026 AIE Creations. Diseño con propósito e identidad propia.</p>
+        <p>&copy; 2026 AIE Creations by Mariü. <br/>
+            Diseño con propósito e identidad propia.</p>
         <a href="https://github.com/MariuLorenzo" target="_blank" rel="noopener noreferrer">Visita mi perfil de GitHub</a>
+    
+        <div class="heart-container" id="heartContainer" title="Haz clic para interactuar">
+            <div class="heart beating" id="heartElement"></div>
+        </div>
+    <p class="footer-status" id="statusText">Haz clic para detener el corazón</p>
+
     </footer>
+
+<!-- LLAMA AL ARCHIVO JAVASCRIPT -->
+    <script src="heart.js"></script>
 
 </body>
 </html>
