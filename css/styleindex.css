@@ -617,7 +617,7 @@ section {
     position: relative;
     user-select: none;
     flex-shrink: 0;
-    padding: 6px;
+    padding: 3px;
     border-radius: 50%;
     transition: transform 0.25s ease, background-color 0.25s ease;
 }
@@ -627,7 +627,7 @@ section {
     background-color: rgba(139, 92, 246, 0.15);
 }
 
-/* Corazón compacto con gradiente violeta a rosa */
+/* Corazón con gradiente violeta a rosa */
 .heart {
     width: 15rem;
     height: 15rem;
@@ -660,7 +660,7 @@ section {
     }
 }
 
-/* Estado detenido (apagado sutil e interactivo) */
+/* Estado detenido (apagado interactivo) */
 .heart.stopped {
     background: #666666;
     filter: drop-shadow(0 0 2px rgba(100, 100, 100, 0.4));
