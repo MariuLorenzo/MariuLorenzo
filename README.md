@@ -2,22 +2,20 @@
 ---
 #
 Soy estudiante de la tecnicatura en "Desarrollo de Software" del IFTS N°29, perteneciente a la República Argentina 🇦🇷 :argentina:   
-Este proyecto lo realizo en 2026 para "Desarrollo de Sistemas Web - Front End". 
-En un presente tan diverso y con miras a un futuro totalmente incierto, todos los caminos en mi vida parecían indicarme que _"el futuro" está en aprender "código"_... 😉
 
 #
 ## Sobre Mí ✨
 #
 
 Soy Mariü y mi proyecto es "AIE Creations". <br>
-Combino la lógica del software, el diseño UX/UI y una sólida formación en humanidades y psicomotricidad para crear soluciones tecnológicas con propósito.  En mi vida profesional hice un recorrido interdisciplinario que incluye la docencia, el coaching, la comunicación y el arte. Desde esa mirada, entiendo que el código informático y los mapas mentales comparten una misma esencia: estructuran la forma en que interactuamos con el mundo.  Hoy transformo esa versatilidad en productos digitales funcionales, humanos y sostenibles, aportando una perspectiva empática, curiosa y orientada a resolver problemas reales. 
+Combino la lógica del software, el diseño UX/UI y una sólida formación en humanidades y psicomotricidad para crear soluciones tecnológicas con propósito.  
+En mi vida profesional hice un recorrido interdisciplinario que incluye la docencia, el coaching, la comunicación y el arte. 
+Desde esa mirada, entiendo que el código informático y los mapas mentales comparten una misma esencia: estructuran la forma en que interactuamos con el mundo.  
+Hoy transformo esa versatilidad en productos digitales funcionales, humanos y sostenibles, aportando una perspectiva empática, curiosa y orientada a resolver problemas reales. 
 
 #
-## Instalación 🔧
+## Sobre la página 🔧
 #
-
-_(No requiere instalación)_
-
 El formato de la página es _responsive_ aplica a todos los tamaños de dispositivo desde donde se navegue.🖥️💻📱
 
 #
@@ -25,6 +23,7 @@ El formato de la página es _responsive_ aplica a todos los tamaños de disposit
 #
 
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
+((La página se encuentra en etapa de desarrollo e iteración))
 
 #
 ## Despliegue 📦
@@ -82,13 +81,11 @@ Esta página está disponible para todas las versiones de navegadores.
 #
 ## Licencia 📄
 #
-Este proyecto está bajo mi Licencia ©️ 
-
-_(justificada con toda la frustración que genera este universo que aún no comprendo... jaja)_ ®️
+©️ Este proyecto está bajo mi Licencia ®️
 
 
 #
-😊 holis programador! 
+😊 holis! 
 
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Naereen/ama)
 
